@@ -2,3 +2,4 @@ streamlit
 pandas  
 sklearn
 nltk
+scikit-learn
