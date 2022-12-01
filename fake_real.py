@@ -10,6 +10,11 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 import re
 
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+stopwords = stopwords.words('english')
+
 model = pickle.load(open('models/model.pkl', 'rb'))
 vectorizer = pickle.load(open('models/vectorizer.pkl', 'rb'))
 
