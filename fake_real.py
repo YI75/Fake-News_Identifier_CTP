@@ -56,7 +56,12 @@ def text_pipeline(input_string):
     input_string = remove_stopwords(input_string)    
     return input_string
 
-sentence = st.text_input('Input your headline here:') 
+st.image('1.png')
+
+st.title('Fake News Identifier')
+
+sentence = st.text_input('Enter your news headline here:') 
+st.button('Identify')
 
 if sentence:
 
@@ -65,7 +70,9 @@ if sentence:
     prediction = model.predict(sentence)
     prediction_proba = model.predict_proba(sentence)
 
-    st.markdown(prediction)
+    st.text(prediction)
+
+st.header('Model Explanation')
 
 
     	
