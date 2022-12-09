@@ -72,7 +72,6 @@ if sentence:
 
     st.text(prediction)
 
-st.header('Model Explanation')
 
 
     	
