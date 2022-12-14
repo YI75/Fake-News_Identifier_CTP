@@ -70,4 +70,4 @@ if sentence:
     prediction = model.predict(sentence)
     prediction_proba = model.predict_proba(sentence)
   
-    st.header(prediction.replace("'", "",2))
+    st.header(prediction)
