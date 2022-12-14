@@ -69,8 +69,9 @@ if sentence:
     sentence = vectorizer.transform([sentence])
     prediction = model.predict(sentence)
     prediction_proba = model.predict_proba(sentence)
-
-    st.text(prediction)
+    prediction.replace('']', ''))     
+    prediction.replace('['', ''))
+    st.header(prediction)
 
 
 
