@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
+from scipy.sparse import csr_matrix
 import nltk
 from nltk.corpus import stopwords
 from nltk import word_tokenize
