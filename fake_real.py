@@ -10,7 +10,6 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 import nltk
-nltk.download('punkt', quiet=True)
 import re
 
 nltk.download('stopwords')
