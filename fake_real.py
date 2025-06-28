@@ -74,3 +74,5 @@ if sentence:
     prediction_proba = model.predict_proba(sentence)
   
     st.header("The headline is most likely {}.".format(prediction[0].lower()))
+
+st.write("False news is a growing issue in the U.S., spreading beyond politics into daily life. Many Americans see it regularly and believe individuals should help stop it by fact-checking and reporting. However, trust in the media is low, leading to news avoidance. Combating misinformation relies on more informed, responsible audiences.")
