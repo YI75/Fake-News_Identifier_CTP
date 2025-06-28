@@ -73,4 +73,4 @@ if sentence:
     prediction = model.predict(sentence)
     prediction_proba = model.predict_proba(sentence)
   
-    st.header(prediction[0])
+    st.header("The headline is most likely {}.".format(prediction[0].lower()))
